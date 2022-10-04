@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="style/styles2.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
+    <!--carrossel de img-->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+
     <title>WironFlix - Filmes e Séries</title>
 </head>
 <body>
@@ -62,8 +72,13 @@
                         <div class=" text-white mt-1 ms-2">LIA</div>
                     </div>
                   </a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  
+                  <li><a class="dropdown-item"   href="#">
+                    <div class="d-flex flex-row mb-3">
+                        <div class=""><img src="assets/user3.jpg" width="30px" style="border-radius: 4px;"></div>
+                        <div class=" text-white mt-1 ms-2">ENZO</div>
+                    </div>
+                  </a></li>
                 </ul>
               </li>
             </div>
@@ -81,9 +96,9 @@
 
         <div class="ms-4 mt-3">
             <img src="assets/top10.png" width="30">
-            <span style="font-weight: bold !important; font-size: 1.2rem !important">Top 1 em séries hoje</span>
+            <span style="font-weight: bold !important; font-size: 1.2rem !important" onselectstart="return false">Top 1 em séries hoje</span>
         </div>
-        <div class="text-left ms-4 mt-3" style="font-weight: bold; font-size: 1.1rem;">Por mais de uma década, Jeff Dahmer conseguiu matar 17<br> jovens rapazes sem levantar suspeitas
+        <div class="text-left ms-4 mt-3" style="font-weight: bold; font-size: 1.1rem;" onselectstart="return false" >Por mais de uma década, Jeff Dahmer conseguiu matar 17<br> jovens rapazes sem levantar suspeitas
         da polícia. Como ele <br> conseguiu evitar a prisão por tanto tempo?
         </div>
 
@@ -92,13 +107,45 @@
             <button type="button" class="btn btn-secondary ms-4 mt-4 bg-gradient text-white" style="font-weight: bold; background-color: rgb(68, 68, 68) !important; border: none;"> <i class="bi bi-info-circle text-white"></i> Mais informações</button>
         </div>
     
-        <div class="ms-4 mt-5">
+        <div class="ms-4 " style="font-weight: bold !important; font-size: 1.2rem !important; margin-top: 90px !important;" onselectstart="return false">
             Lançados nos últimos 12 meses
         </div>
-    </div>
-</div>
 
-   
+        <div class="carousel ms-4" style="width: 95%;">
+          <div><img src="assets/films/img1.jpg" alt="js" /></div>
+          <div><img src="assets/films/img2.jpg" alt="java" /></div>
+          <div><img src="assets/films/img3.jpg" alt="python"/></div>
+          <div><img src="assets/films/img4.jpg" alt="kotlin" /></div>
+          <div><img src="assets/films/img5.jpg" alt="scala" /></div>
+          <div><img src="assets/films/img6.jpg" alt="C#" /></div>
+          <div><img src="assets/films/img7.jpg" alt="PHP" /></div>
+          <div><img src="assets/films/img8.jpg" alt="dotnet" /></div>
+        </div>
+
+        <div class="ms-4 " style="font-weight: bold !important; font-size: 1.2rem !important;" onselectstart="return false">
+          Continuar assistindo como WJ
+      </div>
+
+      <div class="carousel ms-4" style="width: 95%;">
+        <div><img src="assets/films/img9.jpg" alt="js" /></div>
+        <div><img src="assets/films/img10.jpg" alt="java" /></div>
+        <div><img src="assets/films/img11.jpg" alt="python"/></div>
+        <div><img src="assets/films/img12.jpg" alt="kotlin" /></div>
+        <div><img src="assets/films/img13.jpg" alt="scala" /></div>
+        <div><img src="assets/films/img14.jpg" alt="C#" /></div>
+        <div><img src="assets/films/img15.jpg" alt="PHP" /></div>
+        <div><img src="assets/films/img16.jpg" alt="dotnet" /></div>
+      </div>
+
+   <script>
+      $('.carousel').slick({
+      dots: true,
+      infinite: true,
+      speed: 900,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+    });
+   </script>
 
 </body>
 </html>
