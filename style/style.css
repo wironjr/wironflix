@@ -81,4 +81,17 @@ nav a{
     .dropdown{
         display: none
     }
+
+    .add-res{
+        margin: 0 auto;
+    }
+
+    #text-inicio{
+        margin-top: 60px !important;
+        
+    }
+
+    .container-meu{
+        margin-bottom: 80px !important;
+    }
   }
