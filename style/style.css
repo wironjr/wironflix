@@ -83,7 +83,8 @@ nav a{
     }
 
     .dropdown{
-        display: none
+        position: relative;
+        left: -40px;
     }
 
     .add-res{
@@ -107,5 +108,9 @@ nav a{
     .text-index-res-ult{
         position: relative;
         top: -40px !important;
+    }
+
+    .hide-res{
+        display: none !important;
     }
   }
