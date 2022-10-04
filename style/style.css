@@ -49,6 +49,10 @@ nav a{
     background-size: 100% !important;
 }
 
+.nav-item a:hover{
+    background-color: #191919 !important;
+}
+
 @media only screen and (max-width: 520px) {
     .navbar-toggler-icon{
         background-color: red !important;
