@@ -48,3 +48,37 @@ nav a{
     background: url(../assets/bg-films.jpg) no-repeat center top !important;
     background-size: 100% !important;
 }
+
+@media only screen and (max-width: 520px) {
+    .navbar-toggler-icon{
+        background-color: red !important;
+    }
+    .navbar-toggler{
+        background-color: red !important;
+    }
+
+    .logo-film{
+        width: 350px !important;
+    }
+
+    /*
+    .carousel img{
+        width: 100px;
+    }*/
+
+    .carousel{
+        display: none !important;
+    }
+
+    .carousel-cell{
+        display: block !important;
+    }
+
+    .container-carrossel{
+        width: 22rem !important;
+    }
+
+    .dropdown{
+        display: none
+    }
+  }

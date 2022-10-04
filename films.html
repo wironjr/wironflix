@@ -87,10 +87,10 @@
         </div>
       </nav>
 
-    <div class="mt-5">
+    <div class="mt-5 container-carrossel">
         <div>
-            <h6 class="ms-4" style="font-weight: bold">N Série</h6>
-            <img src="assets/logo-film.png" width="600" class="ms-3">
+            <h6 class="ms-4 " style="font-weight: bold">N Série</h6>
+            <img src="assets/logo-film.png" width="600" class="ms-3 logo-film">
         </div>
         <!--teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>teste<br>-->
 
@@ -107,11 +107,22 @@
             <button type="button" class="btn btn-secondary ms-4 mt-4 bg-gradient text-white" style="font-weight: bold; background-color: rgb(68, 68, 68) !important; border: none;"> <i class="bi bi-info-circle text-white"></i> Mais informações</button>
         </div>
     
-        <div class="ms-4 " style="font-weight: bold !important; font-size: 1.2rem !important; margin-top: 90px !important;" onselectstart="return false">
+        <div class="ms-4 " style="font-weight: bold !important; font-size: 1.2rem !important; margin-top: 120px !important;" onselectstart="return false">
             Lançados nos últimos 12 meses
         </div>
 
         <div class="carousel ms-4" style="width: 95%;">
+          <div><img src="assets/films/img1.jpg" alt="js" /></div>
+          <div><img src="assets/films/img2.jpg" alt="java" /></div>
+          <div><img src="assets/films/img3.jpg" alt="python"/></div>
+          <div><img src="assets/films/img4.jpg" alt="kotlin" /></div>
+          <div><img src="assets/films/img5.jpg" alt="scala" /></div>
+          <div><img src="assets/films/img6.jpg" alt="C#" /></div>
+          <div><img src="assets/films/img7.jpg" alt="PHP" /></div>
+          <div><img src="assets/films/img8.jpg" alt="dotnet" /></div>
+        </div>
+
+        <div class="carousel-cell ms-4" style="display: none;" >
           <div><img src="assets/films/img1.jpg" alt="js" /></div>
           <div><img src="assets/films/img2.jpg" alt="java" /></div>
           <div><img src="assets/films/img3.jpg" alt="python"/></div>
@@ -137,6 +148,21 @@
         <div><img src="assets/films/img16.jpg" alt="dotnet" /></div>
       </div>
 
+      <div class="carousel-cell ms-4" style="display: none;">
+        <div><img src="assets/films/img9.jpg" alt="js" /></div>
+        <div><img src="assets/films/img10.jpg" alt="java" /></div>
+        <div><img src="assets/films/img11.jpg" alt="python"/></div>
+        <div><img src="assets/films/img12.jpg" alt="kotlin" /></div>
+        <div><img src="assets/films/img13.jpg" alt="scala" /></div>
+        <div><img src="assets/films/img14.jpg" alt="C#" /></div>
+        <div><img src="assets/films/img15.jpg" alt="PHP" /></div>
+        <div><img src="assets/films/img16.jpg" alt="dotnet" /></div>
+      </div>
+
+      <footer class="text-center fs-6 mt-5" >
+        <h6 style="font-weight: bold;"> Site desenvolvido por Wiron Junior para meios de estudos.</h6>
+      </footer>
+
    <script>
       $('.carousel').slick({
       dots: true,
@@ -144,6 +170,14 @@
       speed: 900,
       slidesToShow: 4,
       slidesToScroll: 4,
+    });
+
+    $('.carousel-cell').slick({
+      dots: true,
+      infinite: true,
+      speed: 900,
+      slidesToShow: 1,
+      slidesToScroll: 1,
     });
    </script>
 
