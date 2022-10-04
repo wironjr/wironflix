@@ -94,4 +94,14 @@ nav a{
     .container-meu{
         margin-bottom: 80px !important;
     }
+
+    .text-index-res{
+        position: relative;
+        top: -70px !important;
+    }
+
+    .text-index-res-ult{
+        position: relative;
+        top: -40px !important;
+    }
   }
