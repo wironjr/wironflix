@@ -76,6 +76,13 @@ nav a{
         width: 160px;
     }
 
+    .conteiner-cell{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 50% !important;
+    }
+
     /*
     .carousel img{
         width: 100px;
@@ -99,7 +106,8 @@ nav a{
     }
 
     .add-res{
-        width: 140px !important;
+        width: 130px !important;
+        height: 130px;
         
     }
 
@@ -122,11 +130,11 @@ nav a{
     }
 
     .text-index-res-ult{
-        position: relative;
-        top: -40px !important;
-        left: -30px;
-        text-align: center;
-      
+        margin: 0 auto;
+    }
+
+    .text-res-add-prefil{
+        margin-top: 0px !important;
     }
 
     .hide-res{
